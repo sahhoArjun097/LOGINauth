@@ -1,7 +1,7 @@
 const express = require("express")
 const mongoose = require('mongoose')
 const cors = require("cors")
-const EmployeeModel = require('./models/employees')q
+const EmployeeModel = require('./models/employees')
 
 const app = express()
 app.use(express.json())
@@ -46,7 +46,7 @@ app.post("/login", async (req, res) => {
             message: "Incorrect password"
         })
     }
-    
+
 
     res.json({
         status: "success",

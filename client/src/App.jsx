@@ -12,14 +12,14 @@ function App() {
 
   return (
     <div>
-   <UserContext.Provider value={{ user, setUser }}>
-   <Routes>
-  <Route path='/register' element={<Signup />} />
-  <Route path='/login' element={<Login />} />
-  <Route path='/home' element={<Home />} />
-</Routes>
-    
-   </UserContext.Provider>
+      <UserContext.Provider value={{ user, setUser }}>
+        <Routes>
+          <Route path='/' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/home' element={<Home />} />
+        </Routes>
+
+      </UserContext.Provider>
 
 
 
